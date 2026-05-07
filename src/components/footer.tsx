@@ -1,4 +1,4 @@
-import { ForumLogo, IconInstagram, IconFacebook } from "./icons";
+import { ForumLogo, IconInstagram } from "./icons";
 
 export function Footer() {
   return (
@@ -18,8 +18,14 @@ export function Footer() {
               want to come back to.
             </p>
             <div className="foot-social">
-              <a href="#" aria-label="Instagram"><IconInstagram /></a>
-              <a href="#" aria-label="Facebook"><IconFacebook /></a>
+              <a
+                href="https://www.instagram.com/forumcoffeeunda/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <IconInstagram />
+              </a>
             </div>
           </div>
           <div className="foot-col">
