@@ -42,7 +42,7 @@ const items = [
     icon: <IconShake />,
     name: "Shakes",
     desc: "Thick, creamy and indulgent.",
-    image: "/images/upload-1.webp",
+    image: "/images/signature-shake.jpg",
   },
 ];
 
