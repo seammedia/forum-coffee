@@ -1,57 +1,57 @@
-import { Arrow } from "./icons";
-
-const hours: [string, string, boolean][] = [
-  ["Monday", "7:00 – 4:00", false],
-  ["Tuesday", "7:00 – 4:00", false],
-  ["Wednesday", "7:00 – 4:00", true],
-  ["Thursday", "7:00 – 4:00", false],
-  ["Friday", "7:00 – 4:00", false],
-  ["Saturday", "8:00 – 3:00", false],
-  ["Sunday", "Closed", false],
-];
+import { IconPin, IconClock, IconPhone, IconMail } from "./icons";
 
 export function Visit() {
   return (
     <section id="visit" className="visit">
       <div className="container">
-        <div className="section-head">
-          <div>
-            <span className="eyebrow">Visit</span>
-            <h2>Pull up a chair<br />on <em>Broadway.</em></h2>
-          </div>
-          <p className="lede">
-            Two minutes from Central Station, opposite Victoria Park. Bike racks
-            out front, courtyard out back, and a long table that&apos;s almost always free at 10am.
-          </p>
-        </div>
         <div className="visit-grid">
-          <div className="visit-card">
-            <h3>Find us</h3>
-            <div className="addr">
-              112-126 Broadway,<br />
-              Chippendale NSW 2008<br />
-              Sydney, Australia
-            </div>
-            <div style={{ height: 1, background: "var(--rule)" }} />
-            <div style={{ display: "flex", gap: 24, fontFamily: "var(--mono)", fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>
-              <a href="mailto:hello@forumcoffee.com.au">Hello@forumcoffee.com.au</a>
-              <a href="tel:+61280000000">+61 2 8000 0000</a>
-            </div>
-            <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-              <a href="#" className="btn primary">Get directions <Arrow /></a>
-              <a href="#" className="btn">Book a table <Arrow /></a>
-            </div>
-          </div>
-          <div className="visit-card dark">
-            <h3>Hours</h3>
-            <div className="hours">
-              {hours.map(([day, time, today], i) => (
-                <div key={i} className={"row" + (today ? " today" : "")}>
-                  <span>{day}{today ? " · today" : ""}</span>
-                  <span>{time}</span>
+          <div className="visit-info">
+            <span className="eyebrow">Find Us</span>
+            <h2>Visit us in Chippendale.</h2>
+            <div className="visit-rows">
+              <div className="visit-row">
+                <span className="icon"><IconPin /></span>
+                <div className="text">
+                  112-126 Broadway,<br />
+                  Chippendale NSW 2008
                 </div>
-              ))}
+              </div>
+              <div className="visit-row">
+                <span className="icon"><IconClock /></span>
+                <div className="text">
+                  <div className="hour-line"><span>Mon-Fri</span><span>6:30am - 3:30pm</span></div>
+                  <div className="hour-line"><span>Sat-Sun</span><span>7:00am - 3:00pm</span></div>
+                </div>
+              </div>
+              <div className="visit-row">
+                <span className="icon"><IconPhone /></span>
+                <div className="text">
+                  <a href="tel:+61299991234">(02) 9999 1234</a>
+                </div>
+              </div>
+              <div className="visit-row">
+                <span className="icon"><IconMail /></span>
+                <div className="text">
+                  <a href="mailto:hello@forumcoffee.com.au">hello@forumcoffee.com.au</a>
+                </div>
+              </div>
             </div>
+            <a
+              href="https://maps.google.com/?q=112+Broadway+Chippendale+NSW+2008"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-tan"
+            >
+              Get Directions
+            </a>
+          </div>
+          <div className="visit-map">
+            <iframe
+              title="Forum Coffee location map"
+              src="https://www.google.com/maps?q=112+Broadway,Chippendale+NSW+2008&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
       </div>
