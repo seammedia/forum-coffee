@@ -1,10 +1,8 @@
 import {
   IconCoffee,
   IconPastry,
-  IconSmoothie,
   IconJuice,
   IconFood,
-  IconShake,
 } from "./icons";
 
 const items = [
@@ -21,12 +19,6 @@ const items = [
     image: "/images/signature-pastry.jpg",
   },
   {
-    icon: <IconSmoothie />,
-    name: "Smoothies",
-    desc: "Blended to order with real fruit.",
-    image: "/images/signature-smoothie.jpg",
-  },
-  {
     icon: <IconJuice />,
     name: "Juice",
     desc: "Cold-pressed and refreshing.",
@@ -37,12 +29,6 @@ const items = [
     name: "Food",
     desc: "Simple, delicious and satisfying.",
     image: "/images/signature-food.jpg",
-  },
-  {
-    icon: <IconShake />,
-    name: "Shakes",
-    desc: "Thick, creamy and indulgent.",
-    image: "/images/signature-shake.jpg",
   },
 ];
 
