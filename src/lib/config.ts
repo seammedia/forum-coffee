@@ -1,8 +1,7 @@
 // Site-wide config. Update SQUARE_ONLINE_URL once Square Online is published.
 
 // The Square Online ordering URL — get this from Square Dashboard → Online → Site URL
-// Example: "https://forum-coffee.square.site"
-export const SQUARE_ONLINE_URL = "https://squareup.com/dashboard"; // PLACEHOLDER — replace with real URL
+export const SQUARE_ONLINE_URL = "https://forum-coffee-106414.square.site";
 
 // Whether to embed Square Online in an iframe on /order, or link out directly.
 // Set to false to just open the Square site in a new tab.
