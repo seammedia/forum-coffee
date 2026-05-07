@@ -2,7 +2,12 @@ export function Hero() {
   return (
     <section className="hero">
       <div className="hero-bg">
-        <img src="/images/upload-2.webp" alt="Forum Coffee menu wall and barista" />
+        <img
+          src="/images/hero-menu-wall-2400.jpg"
+          srcSet="/images/hero-menu-wall-1600.jpg 1600w, /images/hero-menu-wall-2400.jpg 2400w"
+          sizes="100vw"
+          alt="Forum Coffee menu wall and barista at the counter"
+        />
       </div>
       <div className="hero-inner">
         <div className="container">
