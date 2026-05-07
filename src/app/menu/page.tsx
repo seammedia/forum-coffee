@@ -7,74 +7,118 @@ import { SQUARE_ONLINE_URL } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Menu — Forum Coffee",
   description:
-    "Specialty coffee, fresh pastries, juice, smoothies, food and shakes — made fresh daily at Forum Coffee, Chippendale.",
+    "Hot drinks, cold drinks, pastries, pies, wraps, sandwiches and salads — made fresh daily at Forum Coffee, Chippendale.",
 };
 
 type Item = { name: string; desc?: string; price: string };
 
-const categories: { name: string; items: Item[] }[] = [
+const categories: { name: string; priceLabel?: string; items: Item[] }[] = [
   {
-    name: "Coffee",
+    name: "Hot Drinks",
+    priceLabel: "Reg / Lrg",
     items: [
-      { name: "Black", desc: "Long, short or batch brew.", price: "4.0 / 5.0" },
-      { name: "White", desc: "Flat white, latte, cappuccino, piccolo.", price: "4.5 / 5.5" },
-      { name: "Chai · Iced", desc: "Prana spiced chai or iced over milk.", price: "6.0 / 7.0" },
-      { name: "Matcha · Iced", desc: "Ceremonial grade, single origin.", price: "6.0 / 7.0" },
-      { name: "Filter Brew", desc: "V60 of the week, ask the bar.", price: "6.5" },
-      { name: "Add-ons", desc: "Oat, almond, decaf or extra shot.", price: "0.5" },
+      { name: "Espresso", price: "3.5 / 4.0" },
+      { name: "Black", price: "4.0 / 5.0" },
+      { name: "White", price: "4.5 / 5.5" },
+      { name: "Magic", price: "4.8" },
+      { name: "Mocha", price: "4.5 / 5.5" },
+      { name: "Chai", price: "6.0" },
+      { name: "Matcha", price: "6.0" },
+      { name: "Assorted Teas", price: "5.0" },
     ],
   },
   {
-    name: "Tea",
+    name: "Cold Drinks",
     items: [
-      { name: "English Breakfast", price: "5.0" },
-      { name: "Earl Grey", price: "5.0" },
-      { name: "Peppermint", price: "5.0" },
-      { name: "Green Sencha", price: "5.0" },
-      { name: "Chamomile", price: "5.0" },
-      { name: "Lemongrass & Ginger", price: "5.0" },
+      { name: "Iced Coffee", price: "6.5" },
+      { name: "Iced Chai", price: "6.5" },
+      { name: "Iced Matcha", price: "6.5" },
+      { name: "Milkshakes", price: "12.0" },
+      { name: "Smoothies", price: "7.0" },
+      { name: "Peach Iced Tea", price: "4.5" },
+      { name: "Juices", price: "5.0" },
     ],
   },
   {
     name: "Pastries",
     items: [
-      { name: "Almond Croissant", desc: "Twice-baked, dusted with icing sugar.", price: "7.5" },
-      { name: "Butter Croissant", desc: "Flaky, traditional, baked daily.", price: "6.0" },
-      { name: "Pain au Chocolat", desc: "Two batons of dark chocolate.", price: "6.5" },
-      { name: "Banana Bread", desc: "Toasted, with butter.", price: "7.0" },
-      { name: "Carrot Cake Slice", desc: "House-made cream cheese frosting.", price: "8.0" },
-      { name: "Custard Tart", desc: "Vanilla bean, brûléed top.", price: "7.0" },
+      { name: "Croissant", price: "6.0" },
+      { name: "Pain au Chocolat", price: "7.0" },
+      { name: "Almond Croissant", price: "9.0" },
+      { name: "Ham + Cheese Croissant", price: "9.0" },
+      { name: "Double Chocolate Muffin", price: "6.8" },
+      { name: "Mixed Berry Muffin", price: "6.8" },
+      { name: "Banana Bread", price: "5.0" },
     ],
   },
   {
-    name: "Food",
+    name: "Pies",
     items: [
-      { name: "Bacon & Egg Roll", desc: "Free-range, smoky relish, milk bun.", price: "12.0" },
-      { name: "Avo on Sourdough", desc: "Lemon, chilli, dukkah, sea salt.", price: "16.0" },
-      { name: "Chicken Wrap", desc: "Slaw, chipotle aioli, fresh herbs.", price: "14.0" },
-      { name: "Halloumi Wrap", desc: "Roast capsicum, hummus, rocket.", price: "14.0" },
-      { name: "Loaded Toastie", desc: "Three cheese, leg ham, dijon.", price: "13.0" },
-      { name: "Soup of the Day", desc: "With sourdough on the side.", price: "12.0" },
+      { name: "Beef Mince", price: "9.0" },
+      { name: "Chicken, Leek, Mustard", price: "9.0" },
+      { name: "Eggplant, Potato, Pea Curry", price: "9.0" },
+      { name: "Pork + Fennel Sausage Roll", price: "8.0" },
     ],
   },
   {
-    name: "Smoothies",
+    name: "Baked",
     items: [
-      { name: "Berry Burst", desc: "Mixed berries, banana, oat milk.", price: "12.0" },
-      { name: "Tropical Sun", desc: "Mango, pineapple, coconut water.", price: "12.0" },
-      { name: "Green Glow", desc: "Spinach, banana, apple, ginger.", price: "12.0" },
-      { name: "Choc Protein", desc: "Cacao, banana, almond, whey.", price: "13.0" },
+      { name: "Choc Chip", price: "5.5" },
+      { name: "Dubai Pistachio", price: "5.5" },
+      { name: "Biscoff + White Choc", price: "5.5" },
+      { name: "Pistachio, Almond, Coconut Bar", desc: "Gluten free.", price: "5.5" },
     ],
   },
   {
-    name: "Juice & Shakes",
+    name: "Wraps",
     items: [
-      { name: "Cold-pressed OJ", desc: "Just oranges, nothing else.", price: "8.0" },
-      { name: "Antioxidant", desc: "Beetroot, apple, ginger, lemon.", price: "9.0" },
-      { name: "Green", desc: "Celery, cucumber, kale, mint.", price: "9.0" },
-      { name: "Choc Milkshake", desc: "Belgian cocoa, vanilla bean.", price: "9.0" },
-      { name: "Vanilla Malt", desc: "Classic with malted milk.", price: "9.0" },
-      { name: "Salted Caramel", desc: "House-made caramel, sea salt.", price: "9.5" },
+      { name: "Za'atar Wrap", desc: "Za'atar, cucumber, tomato, olives.", price: "12.5" },
+      { name: "Chicken Wrap", desc: "Tomato, mozzarella, basil.", price: "14.5" },
+      {
+        name: "Halloumi Wrap",
+        desc: "Lettuce, tomato, cucumber, mint, pesto, pomegranate.",
+        price: "14.5",
+      },
+    ],
+  },
+  {
+    name: "Sandwiches",
+    items: [
+      {
+        name: "Classic Ham + Cheese Baguette",
+        desc: "Leg ham, cheese, cornichon, butter.",
+        price: "14.5",
+      },
+      {
+        name: "Caprese Ciabatta",
+        desc: "Tomato, mozzarella, basil.",
+        price: "14.5",
+      },
+      {
+        name: "Schnitzel Sandwich",
+        desc: "Chicken, tomato, lettuce, mayonnaise.",
+        price: "14.5",
+      },
+    ],
+  },
+  {
+    name: "Salads",
+    items: [
+      {
+        name: "Chicken Fattoush",
+        desc: "Lettuce, tomato, cucumber, radish, pita, sumac vinaigrette.",
+        price: "15.0",
+      },
+      {
+        name: "Halloumi Salad",
+        desc: "Lettuce, tomato, cucumber, mint, pesto, walnuts, pomegranate.",
+        price: "15.0",
+      },
+      {
+        name: "Tuna Niçoise",
+        desc: "Eggs, green beans, olives, tomatoes, potato.",
+        price: "15.0",
+      },
     ],
   },
 ];
@@ -86,7 +130,7 @@ export default function MenuPage() {
       <PageHeader
         eyebrow="The Menu"
         title="Made fresh. Made here."
-        description="A short menu, rotated often. Coffee from a single roaster we know by name. Food from kitchens that open before sunrise. Prices in AUD — cash and card welcome."
+        description="Hot and cold drinks, pastries from local bakers, hearty wraps and sandwiches, and seasonal salads. Prices in AUD — cash and card welcome at the bar, or order online for pickup."
       />
       <section className="menu-page">
         <div className="container">
@@ -95,7 +139,9 @@ export default function MenuPage() {
               <div key={cat.name}>
                 <div className="menu-cat-h">
                   <h3>{cat.name}</h3>
-                  <span className="count">{cat.items.length} items</span>
+                  <span className="count">
+                    {cat.priceLabel ?? `${cat.items.length} items`}
+                  </span>
                 </div>
                 <div className="menu-list">
                   {cat.items.map((item) => (
