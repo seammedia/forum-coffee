@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
+import { SQUARE_ONLINE_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Menu — Forum Coffee",
@@ -112,7 +113,17 @@ export default function MenuPage() {
           </div>
           <div className="menu-foot-note">
             <span>Vegan, vegetarian and gluten-free options available — just ask the bar.</span>
-            <a href="/catering" className="btn btn-tan">Order for an Event</a>
+            <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+              <a
+                href={SQUARE_ONLINE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-tan"
+              >
+                Order Online
+              </a>
+              <a href="/catering" className="btn btn-dark">Order for an Event</a>
+            </div>
           </div>
         </div>
       </section>

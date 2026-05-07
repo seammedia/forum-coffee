@@ -1,4 +1,5 @@
 import { ForumLogo } from "./icons";
+import { SQUARE_ONLINE_URL } from "@/lib/config";
 
 export function Nav() {
   return (
@@ -14,7 +15,14 @@ export function Nav() {
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
         </nav>
-        <a href="/menu" className="btn btn-tan nav-cta">Order Online</a>
+        <a
+          href={SQUARE_ONLINE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-tan nav-cta"
+        >
+          Order Online
+        </a>
       </div>
     </header>
   );
