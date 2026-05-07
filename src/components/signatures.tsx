@@ -24,7 +24,7 @@ const items = [
     icon: <IconSmoothie />,
     name: "Smoothies",
     desc: "Blended to order with real fruit.",
-    image: "/images/wraps.webp",
+    image: "/images/signature-smoothie.jpg",
   },
   {
     icon: <IconJuice />,
