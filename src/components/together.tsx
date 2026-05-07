@@ -38,7 +38,7 @@ export function Together() {
             <div className="promo-content">
               <span className="eyebrow">Good Days Start Here</span>
               <h3>Great coffee.<br />Better together.</h3>
-              <a href="#menu" className="btn">View Our Menu</a>
+              <a href="/menu" className="btn">View Our Menu</a>
             </div>
           </div>
           <div className="reviews-block">
