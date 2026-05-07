@@ -1,4 +1,3 @@
-import { ForumLogo } from "./icons";
 import { SQUARE_ONLINE_URL } from "@/lib/config";
 
 export function Nav() {
@@ -6,8 +5,7 @@ export function Nav() {
     <header className="nav">
       <div className="container nav-inner">
         <a href="/" className="nav-brand">
-          <ForumLogo color="#fff" size={26} />
-          <span className="nav-brand-name">FORUM COFFEE</span>
+          <img src="/images/logo-white.png" alt="Forum Coffee" className="nav-logo" />
         </a>
         <nav className="nav-links">
           <a href="/menu">Menu</a>

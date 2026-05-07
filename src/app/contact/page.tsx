@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
-import { IconPin, IconClock, IconPhone, IconMail } from "@/components/icons";
+import { IconPin, IconClock, IconMail } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Contact — Forum Coffee",
@@ -72,12 +72,8 @@ export default function ContactPage() {
                     <span className="icon"><IconClock /></span>
                     <div className="text">
                       <div className="hour-line"><span>Mon-Fri</span><span>6:30am - 3:30pm</span></div>
-                      <div className="hour-line"><span>Sat-Sun</span><span>7:00am - 3:00pm</span></div>
+                      <div className="hour-line"><span>Sat-Sun</span><span>Closed</span></div>
                     </div>
-                  </div>
-                  <div className="visit-row">
-                    <span className="icon"><IconPhone /></span>
-                    <div className="text"><a href="tel:+61299991234">(02) 9999 1234</a></div>
                   </div>
                   <div className="visit-row">
                     <span className="icon"><IconMail /></span>

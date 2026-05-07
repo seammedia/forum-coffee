@@ -1,4 +1,4 @@
-import { IconPin, IconClock, IconPhone, IconMail } from "./icons";
+import { IconPin, IconClock, IconMail } from "./icons";
 
 export function Visit() {
   return (
@@ -20,13 +20,7 @@ export function Visit() {
                 <span className="icon"><IconClock /></span>
                 <div className="text">
                   <div className="hour-line"><span>Mon-Fri</span><span>6:30am - 3:30pm</span></div>
-                  <div className="hour-line"><span>Sat-Sun</span><span>7:00am - 3:00pm</span></div>
-                </div>
-              </div>
-              <div className="visit-row">
-                <span className="icon"><IconPhone /></span>
-                <div className="text">
-                  <a href="tel:+61299991234">(02) 9999 1234</a>
+                  <div className="hour-line"><span>Sat-Sun</span><span>Closed</span></div>
                 </div>
               </div>
               <div className="visit-row">

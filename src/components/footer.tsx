@@ -1,4 +1,4 @@
-import { ForumLogo, IconInstagram } from "./icons";
+import { IconInstagram } from "./icons";
 
 export function Footer() {
   return (
@@ -10,8 +10,7 @@ export function Footer() {
         <div className="foot-inner">
           <div className="foot-brand-block">
             <a href="#" className="nav-brand">
-              <ForumLogo color="#fff" size={26} />
-              <span className="nav-brand-name">FORUM COFFEE</span>
+              <img src="/images/logo-white.png" alt="Forum Coffee" className="nav-logo" />
             </a>
             <p>
               Well-made coffee, good food, nice people, and a place you&apos;ll
@@ -42,14 +41,13 @@ export function Footer() {
             <h4>Hours</h4>
             <div className="lines">
               <div className="hour-line"><span>Mon-Fri</span><span>6:30am - 3:30pm</span></div>
-              <div className="hour-line"><span>Sat-Sun</span><span>7:00am - 3:00pm</span></div>
+              <div className="hour-line"><span>Sat-Sun</span><span>Closed</span></div>
             </div>
           </div>
           <div className="foot-col">
             <h4>Contact</h4>
             <div className="lines">
               <div className="line">112-126 Broadway,<br />Chippendale NSW 2008</div>
-              <div className="line"><a href="tel:+61299991234">(02) 9999 1234</a></div>
               <div className="line"><a href="mailto:hello@forumcoffee.com.au">hello@forumcoffee.com.au</a></div>
             </div>
           </div>
