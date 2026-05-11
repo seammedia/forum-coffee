@@ -34,7 +34,7 @@ export function Together() {
       <div className="container">
         <div className="together-grid">
           <div className="promo">
-            <img src="/images/storefront.webp" alt="Forum Coffee storefront" />
+            <img src="/images/coffee-almond-croissant.jpg" alt="Latte with art and an almond croissant" />
             <div className="promo-content">
               <span className="eyebrow">Good Days Start Here</span>
               <h3>Great coffee.<br />Better together.</h3>
