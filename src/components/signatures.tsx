@@ -1,7 +1,6 @@
 import {
   IconCoffee,
   IconPastry,
-  IconJuice,
   IconFood,
 } from "./icons";
 
@@ -19,10 +18,10 @@ const items = [
     image: "/images/signature-pastry.jpg",
   },
   {
-    icon: <IconJuice />,
-    name: "Juice",
-    desc: "Cold-pressed and refreshing.",
-    image: "/images/signature-juice.jpg",
+    icon: <IconFood />,
+    name: "Wraps",
+    desc: "Fresh wraps made to order.",
+    image: "/images/wraps.webp",
   },
   {
     icon: <IconFood />,

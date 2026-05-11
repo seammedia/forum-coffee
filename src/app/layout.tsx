@@ -33,7 +33,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Forum Coffee — We. Talk. Coffee.",
   description:
-    "A neighbourhood specialty café on Broadway, Chippendale. Slow-pulled espresso, morning pastries from local bakers, and lunches built for the long table.",
+    "A neighbourhood specialty café on Broadway, Chippendale. Slow-pulled espresso, morning pastries from local bakers, and a garden courtyard right on the street.",
   openGraph: {
     title: "Forum Coffee — We. Talk. Coffee.",
     description:

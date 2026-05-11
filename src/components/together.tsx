@@ -8,7 +8,7 @@ const reviews = [
   },
   {
     quote:
-      "Best cold brew in Sydney! The food is amazing and the vibe is perfect.",
+      "Great espresso, fresh pastries every morning, and a vibe you just want to sit in. A proper local.",
     author: "James T.",
   },
   {
@@ -34,7 +34,7 @@ export function Together() {
       <div className="container">
         <div className="together-grid">
           <div className="promo">
-            <img src="/images/upload-1.webp" alt="Coffee and pastry" />
+            <img src="/images/storefront.webp" alt="Forum Coffee storefront" />
             <div className="promo-content">
               <span className="eyebrow">Good Days Start Here</span>
               <h3>Great coffee.<br />Better together.</h3>

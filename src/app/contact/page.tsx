@@ -25,7 +25,7 @@ export default function ContactPage() {
           <div className="contact-grid">
             <form
               className="contact-form"
-              action="https://formsubmit.co/hello@forumcoffee.com.au"
+              action="https://formsubmit.co/sean@forumcoffee.com.au"
               method="POST"
             >
               <div className="field-row">
@@ -43,7 +43,6 @@ export default function ContactPage() {
                 <select id="subject" name="subject" defaultValue="General">
                   <option>General enquiry</option>
                   <option>Catering enquiry</option>
-                  <option>Wholesale</option>
                   <option>Press</option>
                   <option>Feedback</option>
                 </select>
@@ -71,14 +70,15 @@ export default function ContactPage() {
                   <div className="visit-row">
                     <span className="icon"><IconClock /></span>
                     <div className="text">
-                      <div className="hour-line"><span>Mon-Fri</span><span>6:30am - 3:30pm</span></div>
+                      <div className="hour-line"><span>Mon-Thu</span><span>7:00am - 4:00pm</span></div>
+                      <div className="hour-line"><span>Fri</span><span>7:00am - 3:00pm</span></div>
                       <div className="hour-line"><span>Sat-Sun</span><span>Closed</span></div>
                     </div>
                   </div>
                   <div className="visit-row">
                     <span className="icon"><IconMail /></span>
                     <div className="text">
-                      <a href="mailto:hello@forumcoffee.com.au">hello@forumcoffee.com.au</a>
+                      <a href="mailto:sean@forumcoffee.com.au">sean@forumcoffee.com.au</a>
                     </div>
                   </div>
                 </div>

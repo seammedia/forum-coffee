@@ -7,48 +7,75 @@ import { Arrow } from "@/components/icons";
 export const metadata: Metadata = {
   title: "Catering — Forum Coffee",
   description:
-    "Mobile coffee carts, batch brew towers, hand-pour bars, and grazing tables. Catering for offices, openings, and big mornings across Sydney CBD.",
+    "Breakfast platters, sandwiches, gourmet finger food, grazing tables and canapé packages. Catering anywhere in Sydney with 24 hours' notice.",
 };
 
-const tiers = [
+const packages = [
   {
-    name: "The Round",
+    name: "Cocktail Reception",
     badge: null,
-    priceFrom: "14",
-    note: "/ head",
+    priceFrom: "26",
+    note: "/ per person",
     features: [
-      "Batch brew on a self-serve tower",
-      "Selection of teas and milks",
-      "Pastry tray for the table",
-      "Up to 50 cups, 2-hour drop-in",
-      "Delivered, set up, packed down",
+      "Five canapés per person",
+      "Cold + warm options",
+      "GF, V and vegan choices",
+      "Black caviar blini, beef salad, watermelon and more",
+      "Perfect for openings and receptions",
     ],
   },
   {
-    name: "The Bar",
+    name: "Celebration Package",
     badge: "Most Popular",
-    priceFrom: "22",
-    note: "/ head",
+    priceFrom: "48.5",
+    note: "/ per person",
     features: [
-      "On-site barista with espresso cart",
-      "All your espresso menu favourites",
-      "Plant milks included",
-      "Up to 100 covers, 3 service hours",
-      "Branded cups available on request",
+      "Eight items per person",
+      "Cold + warm canapés, substantial sliders, sweet",
+      "Hazelnut tartlet with native Davidson plum",
+      "GF, DF, V and vegan options included",
+      "Built for events that go the distance",
     ],
   },
   {
-    name: "The Forum",
+    name: "Custom Menu",
     badge: null,
-    priceFrom: "32",
-    note: "/ head",
+    priceFrom: "POA",
+    note: "",
     features: [
-      "Two baristas, espresso + filter",
-      "Grazing table with house pastries",
-      "Cold brew on tap option",
-      "Custom signage and printed menu",
-      "Up to 250 covers, 4 service hours",
+      "Built from our full catering menu",
+      "Breakfast platters, sandwiches, finger food",
+      "Grazing boards, sweets and canapés",
+      "Mobile coffee carts available on request",
+      "Any size, any Sydney event",
     ],
+  },
+];
+
+const menuCategories = [
+  {
+    name: "Breakfast + Morning Starters",
+    items: "Yoghurt + Granola Cups · Fresh Fruit Platter · Breakfast Sliders · Mini Savoury Croissants · Mini Muffins · Danish Pastries · Mix Pastries",
+  },
+  {
+    name: "Sandwiches + Wraps",
+    items: "Classic Sandwich Quarters · Wraps Assorted · Mini Sliders · Mini Prawn Brioche Rolls · Finger Sandwiches",
+  },
+  {
+    name: "Gourmet Finger Food (Warm)",
+    items: "Arancini Balls · Teriyaki Chicken Skewers · Puff Pastry Quiches · Mini Chorizo · Veggie Spring Rolls",
+  },
+  {
+    name: "Gourmet Finger Food (Cold)",
+    items: "Chili Mango Salsa · Baby Frittatas · Maki Sushi Box · Rice Paper Rolls · Peking Duck Pancakes",
+  },
+  {
+    name: "Shared Grazing + Platters",
+    items: "Artisanal Cheese Board · Antipasto Platter · Garden Crudités & Dips",
+  },
+  {
+    name: "Sweet Treats",
+    items: "Apple & Cinnamon Pastry Tacos · Assorted Mini Cakes · GF Chocolate Brownies · Mini Jam Donuts",
   },
 ];
 
@@ -56,7 +83,7 @@ const steps = [
   {
     n: "01",
     title: "Send a brief",
-    body: "Date, headcount, address, service hours. The more detail the better.",
+    body: "Date, headcount, address, service window. The more detail the better.",
   },
   {
     n: "02",
@@ -66,12 +93,12 @@ const steps = [
   {
     n: "03",
     title: "Confirm & pay",
-    body: "Lock in with a 30% deposit. Final headcount confirmed 48 hours out.",
+    body: "Lock in with a 10% deposit. We work with you on the final headcount.",
   },
   {
     n: "04",
-    title: "We arrive",
-    body: "Set up 30 minutes before service. You enjoy the morning.",
+    title: "You enjoy the event",
+    body: "We set up, serve, and pack down. You enjoy the event.",
   },
 ];
 
@@ -80,28 +107,73 @@ export default function CateringPage() {
     <>
       <Nav />
       <PageHeader
-        eyebrow="Catering · Sydney CBD"
-        title="Coffee for your big morning."
-        description="Mobile carts, batch brew towers, hand-pour bars and grazing tables. We cater offices, conferences, gallery openings and weddings — from Pyrmont to Surry Hills, with 48 hours' notice."
+        eyebrow="Catering · Sydney-wide"
+        title="Bring Forum to your event."
+        description="Breakfast platters, sandwiches, gourmet finger food, grazing boards and canapé packages. Catering anywhere in Sydney with 24 hours' notice."
       />
 
       <section>
         <div className="container">
           <div style={{ textAlign: "center", maxWidth: "60ch", margin: "0 auto" }}>
             <span className="eyebrow" style={{ display: "block", marginBottom: 14 }}>
-              Three Packages
+              Download the full menu
+            </span>
+            <h2 className="h-display" style={{ fontSize: "clamp(32px, 4vw, 52px)", color: "var(--navy)", margin: "0 0 24px" }}>
+              The catering menu, in full.
+            </h2>
+            <p style={{ fontSize: 15, lineHeight: 1.6, color: "var(--muted)", margin: "0 0 28px" }}>
+              All categories, sizes and pricing. Orders placed before 2pm are delivered the next business day. All prices exclude GST.
+            </p>
+            <a
+              href="/forum-coffee-catering-menu.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-tan"
+            >
+              Download Catering Menu (PDF) <Arrow />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section style={{ background: "var(--paper)" }}>
+        <div className="container">
+          <div style={{ textAlign: "center", maxWidth: "60ch", margin: "0 auto" }}>
+            <span className="eyebrow" style={{ display: "block", marginBottom: 14 }}>
+              What's on the menu
             </span>
             <h2 className="h-display" style={{ fontSize: "clamp(32px, 4vw, 52px)", color: "var(--navy)", margin: 0 }}>
-              Pick the one that fits your morning.
+              Something for every event.
+            </h2>
+          </div>
+          <div style={{ marginTop: "clamp(40px, 5vw, 64px)", display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 24 }}>
+            {menuCategories.map((c) => (
+              <div key={c.name} style={{ background: "#fff", border: "1px solid var(--rule)", borderRadius: 4, padding: "28px 32px" }}>
+                <h3 style={{ fontFamily: "var(--display)", fontWeight: 400, fontSize: 24, color: "var(--navy)", margin: "0 0 10px" }}>{c.name}</h3>
+                <p style={{ fontSize: 14, lineHeight: 1.55, color: "var(--muted)", margin: 0 }}>{c.items}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container">
+          <div style={{ textAlign: "center", maxWidth: "60ch", margin: "0 auto" }}>
+            <span className="eyebrow" style={{ display: "block", marginBottom: 14 }}>
+              Canapé packages
+            </span>
+            <h2 className="h-display" style={{ fontSize: "clamp(32px, 4vw, 52px)", color: "var(--navy)", margin: 0 }}>
+              Pick the one that fits your event.
             </h2>
           </div>
           <div className="catering-tiers">
-            {tiers.map((t) => (
+            {packages.map((t) => (
               <div key={t.name} className={`catering-tier${t.badge ? " featured" : ""}`}>
                 {t.badge && <span className="badge">{t.badge}</span>}
                 <h3>{t.name}</h3>
                 <div className="price-from">
-                  from <b>${t.priceFrom}</b>
+                  {t.priceFrom === "POA" ? <b>POA</b> : <>from <b>${t.priceFrom}</b></>}
                   <span style={{ fontStyle: "normal", fontSize: 13, marginLeft: 4, opacity: 0.7 }}>{t.note}</span>
                 </div>
                 <ul className="feature">
@@ -110,7 +182,7 @@ export default function CateringPage() {
                   ))}
                 </ul>
                 <a
-                  href="/contact"
+                  href="mailto:lucas@forumcoffee.com.au"
                   className={t.badge ? "btn btn-tan" : "btn btn-dark"}
                   style={{ alignSelf: "stretch" }}
                 >
@@ -150,9 +222,9 @@ export default function CateringPage() {
             back within one business day with options.
           </p>
           <div className="cta-strip-actions">
-            <a href="/contact" className="btn btn-tan">Request a Quote <Arrow /></a>
-            <a href="mailto:catering@forumcoffee.com.au" className="btn btn-outline-light">
-              catering@forumcoffee.com.au
+            <a href="mailto:lucas@forumcoffee.com.au" className="btn btn-tan">Request a Quote <Arrow /></a>
+            <a href="mailto:lucas@forumcoffee.com.au" className="btn btn-outline-light">
+              lucas@forumcoffee.com.au
             </a>
           </div>
         </div>

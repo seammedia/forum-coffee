@@ -40,7 +40,8 @@ export function Footer() {
           <div className="foot-col">
             <h4>Hours</h4>
             <div className="lines">
-              <div className="hour-line"><span>Mon-Fri</span><span>6:30am - 3:30pm</span></div>
+              <div className="hour-line"><span>Mon-Thu</span><span>7:00am - 4:00pm</span></div>
+              <div className="hour-line"><span>Fri</span><span>7:00am - 3:00pm</span></div>
               <div className="hour-line"><span>Sat-Sun</span><span>Closed</span></div>
             </div>
           </div>
@@ -48,7 +49,7 @@ export function Footer() {
             <h4>Contact</h4>
             <div className="lines">
               <div className="line">112-126 Broadway,<br />Chippendale NSW 2008</div>
-              <div className="line"><a href="mailto:hello@forumcoffee.com.au">hello@forumcoffee.com.au</a></div>
+              <div className="line"><a href="mailto:sean@forumcoffee.com.au">sean@forumcoffee.com.au</a></div>
             </div>
           </div>
           <div />

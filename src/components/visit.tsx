@@ -19,14 +19,15 @@ export function Visit() {
               <div className="visit-row">
                 <span className="icon"><IconClock /></span>
                 <div className="text">
-                  <div className="hour-line"><span>Mon-Fri</span><span>6:30am - 3:30pm</span></div>
+                  <div className="hour-line"><span>Mon-Thu</span><span>7:00am - 4:00pm</span></div>
+                  <div className="hour-line"><span>Fri</span><span>7:00am - 3:00pm</span></div>
                   <div className="hour-line"><span>Sat-Sun</span><span>Closed</span></div>
                 </div>
               </div>
               <div className="visit-row">
                 <span className="icon"><IconMail /></span>
                 <div className="text">
-                  <a href="mailto:hello@forumcoffee.com.au">hello@forumcoffee.com.au</a>
+                  <a href="mailto:sean@forumcoffee.com.au">sean@forumcoffee.com.au</a>
                 </div>
               </div>
             </div>

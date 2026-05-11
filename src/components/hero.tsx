@@ -18,8 +18,8 @@ export function Hero() {
               want to come back to.
             </p>
             <div className="hero-ctas">
-              <a href="#menu" className="btn btn-tan">View Menu</a>
-              <a href="#catering" className="btn btn-outline-light">Order Catering</a>
+              <a href="/menu" className="btn btn-tan">View Menu</a>
+              <a href="/catering" className="btn btn-outline-light">Order Catering</a>
             </div>
           </div>
         </div>

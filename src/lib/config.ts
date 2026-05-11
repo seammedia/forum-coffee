@@ -11,11 +11,12 @@ export const SQUARE_EMBED_ENABLED = false;
 export const BUSINESS = {
   name: "Forum Coffee",
   address: "112-126 Broadway, Chippendale NSW 2008",
-  email: "hello@forumcoffee.com.au",
-  cateringEmail: "catering@forumcoffee.com.au",
+  email: "sean@forumcoffee.com.au",
+  cateringEmail: "lucas@forumcoffee.com.au",
   instagram: "https://www.instagram.com/forumcoffeeunda/",
   hours: {
-    weekday: "6:30am - 3:30pm",
+    monThu: "7:00am - 4:00pm",
+    fri: "7:00am - 3:00pm",
     weekend: "Closed",
   },
 };
