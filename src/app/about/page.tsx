@@ -38,7 +38,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="Our Story"
         title="More than coffee."
-        description="Forum Coffee opened on Broadway in 2019 with a simple idea: good coffee should be a daily anchor, not a treat. In 2026, the bar is still set by our regulars."
+        description="Forum Coffee opened on Broadway in 2026 with a simple idea: good coffee should be a daily anchor, not a treat. The bar is set by our regulars."
       />
 
       <section className="section-pad-sm">
@@ -66,7 +66,7 @@ export default function AboutPage() {
 
           <div className="about-stats-row">
             <div className="about-stat">
-              <div className="n">2019</div>
+              <div className="n">2026</div>
               <div className="l">Doors opened</div>
             </div>
             <div className="about-stat">
@@ -78,8 +78,8 @@ export default function AboutPage() {
               <div className="l">Local suppliers</div>
             </div>
             <div className="about-stat">
-              <div className="n">4.8★</div>
-              <div className="l">Across 800+ reviews</div>
+              <div className="n">4★</div>
+              <div className="l">Across 4 reviews</div>
             </div>
           </div>
         </div>
