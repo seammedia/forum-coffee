@@ -70,34 +70,82 @@ const categories: { name: string; priceLabel?: string; items: Item[] }[] = [
     ],
   },
   {
-    name: "Wraps",
+    name: "Breakfast",
     items: [
-      { name: "Za'atar Wrap", desc: "Za'atar, cucumber, tomato, olives.", price: "12.5" },
-      { name: "Chicken Wrap", desc: "Tomato, mozzarella, basil.", price: "14.5" },
       {
-        name: "Halloumi Wrap",
-        desc: "Lettuce, tomato, cucumber, mint, pesto, pomegranate.",
-        price: "14.5",
+        name: "B+E Roll",
+        desc: "Bacon, fried eggs, aioli on a soft white roll.",
+        price: "9.5",
+      },
+      {
+        name: "Smoked Salmon Bagel",
+        desc: "Smoked salmon, cream cheese, baby spinach, Spanish onion, capers.",
+        price: "10.5",
+      },
+      {
+        name: "Ham, Cheese + Tomato Sourdough",
+        desc: "Double smoked leg ham, tomato, tasty cheese, Dijon mustard.",
+        price: "9.5",
       },
     ],
   },
   {
-    name: "Sandwiches",
+    name: "Cold Lunch",
     items: [
       {
-        name: "Classic Ham + Cheese Baguette",
-        desc: "Leg ham, cheese, cornichon, butter.",
-        price: "14.5",
+        name: "Italian Baguette",
+        desc: "Tomato, pesto, bocconcini, fresh basil, baby spinach.",
+        price: "10.0",
       },
       {
-        name: "Caprese Ciabatta",
-        desc: "Tomato, mozzarella, basil.",
-        price: "14.5",
+        name: "Waldorf Chicken Ciabatta",
+        desc: "Waldorf chicken, cucumber, carrot, leaf, aioli on Italian ciabatta.",
+        price: "12.0",
       },
       {
-        name: "Schnitzel Sandwich",
-        desc: "Chicken, tomato, lettuce, mayonnaise.",
-        price: "14.5",
+        name: "Salamighty Sandwich",
+        desc: "Danish salami, roasted spicy eggplant, grilled zucchini, rocket.",
+        price: "14.0",
+      },
+    ],
+  },
+  {
+    name: "Hot Lunch",
+    items: [
+      {
+        name: "Chicken Parmy Sandwich",
+        desc: "Chicken schnitzel, roasted eggplant, napolitana, mozzarella.",
+        price: "16.0",
+      },
+      {
+        name: "Cuban Sandwich",
+        desc: "Mojo pulled pork, double smoked Prager ham, Swiss cheese, pickles.",
+        price: "15.0",
+      },
+      {
+        name: "Roasted Pumpkin + Feta Sandwich",
+        desc: "Roasted butternut pumpkin, grilled zucchini, sundried tomato, rocket.",
+        price: "11.0",
+      },
+    ],
+  },
+  {
+    name: "Wraps",
+    items: [
+      {
+        name: "Veggie Patty Wrap",
+        desc: "House-made veggie patty, cucumber, roast peppers, rocket, sweet chilli.",
+        price: "10.0",
+      },
+      {
+        name: "Chicken Schnitzel Wrap",
+        desc: "Chicken schnitzel, tomato, tasty cheese, aioli, leaf.",
+        price: "10.0",
+      },
+      {
+        name: "Pesto Chicken Wrap",
+        desc: "Poached chicken breast, pesto, semi sun-dried tomato, cucumber.",
+        price: "10.0",
       },
     ],
   },
@@ -105,19 +153,19 @@ const categories: { name: string; priceLabel?: string; items: Item[] }[] = [
     name: "Salads",
     items: [
       {
-        name: "Chicken Fattoush",
-        desc: "Lettuce, tomato, cucumber, radish, pita, sumac vinaigrette.",
-        price: "15.0",
+        name: "Traditional Pasta Salad",
+        desc: "House dressing, fresh herbs, seasonal vegetables.",
+        price: "11.0",
       },
       {
-        name: "Halloumi Salad",
-        desc: "Lettuce, tomato, cucumber, mint, pesto, walnuts, pomegranate.",
-        price: "15.0",
+        name: "Crumbed Chicken Caesar Salad",
+        desc: "Crumbed chicken, cos, parmesan, croutons, caesar dressing.",
+        price: "15.5",
       },
       {
-        name: "Tuna Niçoise",
-        desc: "Eggs, green beans, olives, tomatoes, potato.",
-        price: "15.0",
+        name: "Tuna Niçoise Salad",
+        desc: "Tuna, egg, green beans, olives, tomato, potato.",
+        price: "14.5",
       },
     ],
   },
