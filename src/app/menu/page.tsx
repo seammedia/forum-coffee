@@ -23,7 +23,7 @@ const categories: { name: string; priceLabel?: string; items: Item[] }[] = [
       { name: "Magic", price: "4.8" },
       { name: "Mocha", price: "4.5 / 5.5" },
       { name: "Chai", price: "6.0" },
-      { name: "Matcha", price: "6.0" },
+      { name: "Matcha", price: "8.0" },
       { name: "Assorted Teas", price: "5.0" },
     ],
   },
@@ -32,7 +32,7 @@ const categories: { name: string; priceLabel?: string; items: Item[] }[] = [
     items: [
       { name: "Iced Coffee", price: "6.5" },
       { name: "Iced Chai", price: "6.5" },
-      { name: "Iced Matcha", price: "6.5" },
+      { name: "Iced Matcha", price: "9.0" },
       { name: "Milkshakes", price: "12.0" },
       { name: "Smoothies", price: "7.0" },
       { name: "Peach Iced Tea", price: "4.5" },
@@ -154,17 +154,17 @@ const categories: { name: string; priceLabel?: string; items: Item[] }[] = [
     items: [
       {
         name: "Traditional Pasta Salad",
-        desc: "House dressing, fresh herbs, seasonal vegetables.",
+        desc: "Fusilli pasta, roast vegetables, leaf, aioli.",
         price: "11.0",
       },
       {
         name: "Crumbed Chicken Caesar Salad",
-        desc: "Crumbed chicken, cos, parmesan, croutons, caesar dressing.",
+        desc: "Crumbed chicken, bacon, freshly baked croutons, egg, caesar dressing.",
         price: "15.5",
       },
       {
         name: "Tuna Niçoise Salad",
-        desc: "Tuna, egg, green beans, olives, tomato, potato.",
+        desc: "Tuna, green beans, tomato, potato, soft-boiled egg, Spanish onion.",
         price: "14.5",
       },
     ],
